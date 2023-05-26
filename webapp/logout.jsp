@@ -1,4 +1,5 @@
 <center>
+<!--  Limpando  seção e redirecionando -->
 <%
 session.setAttribute("email", null);
 session.invalidate();

@@ -1,3 +1,4 @@
+<!-- Registro do usuário -->
 <%@ page import="java.sql.*"%>
 <center>
 <% 

@@ -1,3 +1,4 @@
+<!--  Verificação do login -->
 <%@ page import="java.sql.*"%>
 <center>
 <%
@@ -12,10 +13,12 @@
  rs = st.executeQuery("SELECT * FROM user WHERE email='" + email + "' AND senha='" + senha + "'");
 	if (rs.next()) 
 		{ 
+		/* Criação do conteúdo das seções pelo resultado da busca da query*/
 			session.setAttribute("id", rs.getString("id")); 
 			session.setAttribute("nome", rs.getString("nome")); 
 			session.setAttribute("sobrenome", rs.getString("sobrenome"));
 			session.setAttribute("data_registro", rs.getString("data_registro")); 
+			/*Passagem da seção om redirecionamento*/
 			response.sendRedirect("success.jsp"); 
 		} 
 	else 
