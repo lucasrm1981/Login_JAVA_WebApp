@@ -5,3 +5,4 @@
 <li># Login_JAVA_WebApp
   <li> Feito diretamente pelo WebApp, sem separação de classes de conexão somente com a criação ads seções e passagens de váriáveis para po login das páginas pela seção.
     <li> Foi escolhido como login único o email e a senha sem hash.
+     <li>Caso faça alterações lembre de chamar o arquivo logout.jsp para limpar o login
